@@ -1,0 +1,63 @@
+{
+  "model_name": "Gradient Boosting",
+  "selection_basis": "Highest PR-AUC in the previous training-only hyperparameter search",
+  "threshold_policy": "Maximize training OOF recall while requiring precision >= 0.90",
+  "selected_threshold": 0.67,
+  "train_oof_metrics": {
+    "threshold": 0.67,
+    "accuracy": 0.8729166666666667,
+    "precision": 0.904,
+    "recall": 0.9541616405307599,
+    "f1": 0.9284037558685446,
+    "roc_auc": 0.8741747161576072,
+    "pr_auc": 0.9749034527392069,
+    "brier_score": 0.09043406157524604,
+    "confusion_matrix": [
+      [
+        47,
+        84
+      ],
+      [
+        38,
+        791
+      ]
+    ]
+  },
+  "test_metrics": {
+    "threshold": 0.67,
+    "accuracy": 0.875,
+    "precision": 0.8933333333333333,
+    "recall": 0.9710144927536232,
+    "f1": 0.9305555555555556,
+    "roc_auc": 0.8923290879812619,
+    "pr_auc": 0.9808230147011252,
+    "brier_score": 0.09024099066603267,
+    "confusion_matrix": [
+      [
+        9,
+        24
+      ],
+      [
+        6,
+        201
+      ]
+    ]
+  },
+  "robustness": {
+    "pr_auc": {
+      "mean": 0.9781552774111365,
+      "std": 0.0051013832146715645
+    },
+    "roc_auc": {
+      "mean": 0.8796052118341275,
+      "std": 0.018065175845852963
+    }
+  },
+  "imbalance_strategy": "Stratified CV; compared class-weight options during tuning. Selected Gradient Boosting without resampling.",
+  "limitations": [
+    "Model selection uses non-nested cross-validation.",
+    "OOF threshold performance is optimistic because the model configuration was previously selected using the same training records.",
+    "Calibration is evaluated, not automatically corrected.",
+    "Final test metrics describe discrimination and prediction, not causal retention effects."
+  ]
+}
