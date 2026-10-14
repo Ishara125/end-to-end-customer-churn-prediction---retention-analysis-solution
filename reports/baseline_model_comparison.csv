@@ -1,0 +1,4 @@
+model,pr_auc_mean,pr_auc_std,roc_auc_mean,roc_auc_std,f1_mean,f1_std,precision_mean,precision_std,recall_mean,recall_std
+Logistic Regression,0.9722,0.0148,0.8694,0.0465,0.9345,0.0106,0.9071,0.0127,0.9638,0.0157
+Gradient Boosting,0.9719,0.008,0.8704,0.021,0.9317,0.009,0.9029,0.0142,0.9626,0.0117
+Random Forest,0.9693,0.0088,0.8538,0.0271,0.9312,0.0084,0.8816,0.0124,0.9867,0.0045
