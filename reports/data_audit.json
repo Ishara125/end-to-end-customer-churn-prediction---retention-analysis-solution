@@ -1,0 +1,175 @@
+{
+  "rows": 1200,
+  "columns": 20,
+  "column_types": {
+    "customer_id": "str",
+    "age": "int64",
+    "tenure_months": "int64",
+    "contract_type": "str",
+    "internet_service": "str",
+    "region": "str",
+    "monthly_charges": "float64",
+    "total_charges": "float64",
+    "payment_method": "str",
+    "paperless_billing": "str",
+    "dependents": "str",
+    "support_plan": "str",
+    "tech_support": "str",
+    "complaints_last_12m": "int64",
+    "late_payments_last_12m": "int64",
+    "satisfaction_score": "float64",
+    "monthly_usage_gb": "float64",
+    "discount_pct": "float64",
+    "senior_citizen": "int64",
+    "churn": "int64"
+  },
+  "missing_by_column": {
+    "customer_id": 0,
+    "age": 0,
+    "tenure_months": 0,
+    "contract_type": 0,
+    "internet_service": 0,
+    "region": 0,
+    "monthly_charges": 30,
+    "total_charges": 24,
+    "payment_method": 0,
+    "paperless_billing": 0,
+    "dependents": 0,
+    "support_plan": 0,
+    "tech_support": 0,
+    "complaints_last_12m": 0,
+    "late_payments_last_12m": 0,
+    "satisfaction_score": 48,
+    "monthly_usage_gb": 36,
+    "discount_pct": 0,
+    "senior_citizen": 0,
+    "churn": 0
+  },
+  "total_missing_cells": 138,
+  "duplicate_rows": 0,
+  "duplicate_customer_ids": 0,
+  "target_distribution": {
+    "1": 1036,
+    "0": 164
+  },
+  "numeric_summary": {
+    "age": {
+      "count": 1200.0,
+      "mean": 46.74666666666667,
+      "std": 16.66670247424566,
+      "min": 18.0,
+      "25%": 32.0,
+      "50%": 47.0,
+      "75%": 61.0,
+      "max": 75.0
+    },
+    "tenure_months": {
+      "count": 1200.0,
+      "mean": 36.26583333333333,
+      "std": 20.917371879473187,
+      "min": 1.0,
+      "25%": 18.0,
+      "50%": 35.0,
+      "75%": 54.0,
+      "max": 72.0
+    },
+    "monthly_charges": {
+      "count": 1170.0,
+      "mean": 71.42976923076922,
+      "std": 25.823950876441344,
+      "min": 20.0,
+      "25%": 54.445,
+      "50%": 71.82,
+      "75%": 86.995,
+      "max": 235.01
+    },
+    "total_charges": {
+      "count": 1176.0,
+      "mean": 2568.007193877551,
+      "std": 1807.2594883495744,
+      "min": 22.73,
+      "25%": 1119.23,
+      "50%": 2244.46,
+      "75%": 3752.0275,
+      "max": 8853.76
+    },
+    "complaints_last_12m": {
+      "count": 1200.0,
+      "mean": 0.7141666666666666,
+      "std": 0.8464019745217305,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 5.0
+    },
+    "late_payments_last_12m": {
+      "count": 1200.0,
+      "mean": 0.8375,
+      "std": 0.8869889370667101,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 4.0
+    },
+    "satisfaction_score": {
+      "count": 1152.0,
+      "mean": 6.744097222222222,
+      "std": 1.784122429087523,
+      "min": 1.0,
+      "25%": 5.6,
+      "50%": 6.75,
+      "75%": 8.0,
+      "max": 10.0
+    },
+    "monthly_usage_gb": {
+      "count": 1164.0,
+      "mean": 66.92577319587629,
+      "std": 39.5961568569064,
+      "min": 2.0,
+      "25%": 41.175000000000004,
+      "50%": 66.4,
+      "75%": 89.325,
+      "max": 466.9
+    },
+    "discount_pct": {
+      "count": 1200.0,
+      "mean": 9.163591666666667,
+      "std": 6.608771764616671,
+      "min": 0.0,
+      "25%": 3.5774999999999997,
+      "50%": 8.715,
+      "75%": 13.695,
+      "max": 32.89
+    },
+    "senior_citizen": {
+      "count": 1200.0,
+      "mean": 0.17166666666666666,
+      "std": 0.3772476888435993,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 1.0
+    },
+    "churn": {
+      "count": 1200.0,
+      "mean": 0.8633333333333333,
+      "std": 0.3436383199936074,
+      "min": 0.0,
+      "25%": 1.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    }
+  },
+  "cleaning_policy": [
+    "Preserve the raw CSV unchanged.",
+    "Do not remove customers solely for missing predictors.",
+    "Reject invalid identifiers and target labels.",
+    "Preserve legitimate outliers for investigation.",
+    "Fit imputation and encoding on training data only.",
+    "Exclude customer_id from predictive features."
+  ]
+}
