@@ -1,0 +1,83 @@
+{
+  "total_customers": 1200,
+  "churned_customers": 1036,
+  "overall_churn_rate": 0.8633,
+  "missing_values": {
+    "customer_id": 0,
+    "age": 0,
+    "tenure_months": 0,
+    "contract_type": 0,
+    "internet_service": 0,
+    "region": 0,
+    "monthly_charges": 30,
+    "total_charges": 24,
+    "payment_method": 0,
+    "paperless_billing": 0,
+    "dependents": 0,
+    "support_plan": 0,
+    "tech_support": 0,
+    "complaints_last_12m": 0,
+    "late_payments_last_12m": 0,
+    "satisfaction_score": 48,
+    "monthly_usage_gb": 36,
+    "discount_pct": 0,
+    "senior_citizen": 0,
+    "churn": 0
+  },
+  "contract_churn": {
+    "Month-to-month": {
+      "mean": 0.9124,
+      "count": 708
+    },
+    "Two year": {
+      "mean": 0.7937,
+      "count": 189
+    },
+    "One year": {
+      "mean": 0.7921,
+      "count": 303
+    }
+  },
+  "late_payment_churn": {
+    "0": {
+      "mean": 0.8406,
+      "count": 502
+    },
+    "1": {
+      "mean": 0.8547,
+      "count": 461
+    },
+    "2": {
+      "mean": 0.9278,
+      "count": 180
+    },
+    "3": {
+      "mean": 0.9318,
+      "count": 44
+    },
+    "4": {
+      "mean": 0.9231,
+      "count": 13
+    }
+  },
+  "feature_means_by_churn": {
+    "0": {
+      "tenure_months": 38.78,
+      "monthly_charges": 68.167,
+      "total_charges": 2559.863,
+      "satisfaction_score": 7.262,
+      "complaints_last_12m": 0.604,
+      "late_payments_last_12m": 0.646,
+      "monthly_usage_gb": 31.048
+    },
+    "1": {
+      "tenure_months": 35.868,
+      "monthly_charges": 71.947,
+      "total_charges": 2569.308,
+      "satisfaction_score": 6.661,
+      "complaints_last_12m": 0.732,
+      "late_payments_last_12m": 0.868,
+      "monthly_usage_gb": 72.561
+    }
+  }
+}
