@@ -1,0 +1,231 @@
+{
+  "model": "Gradient Boosting",
+  "global_method": "Permutation importance",
+  "global_scoring": "average_precision",
+  "individual_method": "Single-feature replacement sensitivity",
+  "limitations": [
+    "These analyses describe predictive behavior, not causal effects.",
+    "Correlated variables can affect permutation importance.",
+    "Replacing one feature can create combinations that are uncommon in real customers.",
+    "Engineered features may change together with their source variables inside the pipeline.",
+    "Risk categories are relative to test predictions and do not imply clinical or financial thresholds."
+  ],
+  "customers": {
+    "low_risk": {
+      "customer_id": "CUST101087",
+      "predicted_churn_probability": 0.4869395961945457,
+      "actual_churn": 0,
+      "explanation_method": "One-feature-at-a-time replacement with training reference values",
+      "top_drivers": [
+        {
+          "feature": "monthly_usage_gb",
+          "original_value": 22.2,
+          "reference_value": 65.0,
+          "original_probability": 0.4869395961945457,
+          "reference_probability": 0.8514141845544542,
+          "risk_difference": -0.3644745883599085
+        },
+        {
+          "feature": "satisfaction_score",
+          "original_value": 9.9,
+          "reference_value": 6.8,
+          "original_probability": 0.4869395961945457,
+          "reference_probability": 0.5794998175605581,
+          "risk_difference": -0.09256022136601244
+        },
+        {
+          "feature": "tenure_months",
+          "original_value": 66,
+          "reference_value": 35.0,
+          "original_probability": 0.4869395961945457,
+          "reference_probability": 0.5583509542360408,
+          "risk_difference": -0.07141135804149507
+        },
+        {
+          "feature": "complaints_last_12m",
+          "original_value": 2,
+          "reference_value": 1.0,
+          "original_probability": 0.4869395961945457,
+          "reference_probability": 0.4421025874782508,
+          "risk_difference": 0.04483700871629487
+        },
+        {
+          "feature": "contract_type",
+          "original_value": "Two year",
+          "reference_value": "Month-to-month",
+          "original_probability": 0.4869395961945457,
+          "reference_probability": 0.5237513983018223,
+          "risk_difference": -0.03681180210727658
+        },
+        {
+          "feature": "late_payments_last_12m",
+          "original_value": 0,
+          "reference_value": 1.0,
+          "original_probability": 0.4869395961945457,
+          "reference_probability": 0.5096128318864953,
+          "risk_difference": -0.022673235691949623
+        },
+        {
+          "feature": "monthly_charges",
+          "original_value": 47.12,
+          "reference_value": 71.21000000000001,
+          "original_probability": 0.4869395961945457,
+          "reference_probability": 0.5084758589712041,
+          "risk_difference": -0.021536262776658377
+        },
+        {
+          "feature": "age",
+          "original_value": 64,
+          "reference_value": 47.0,
+          "original_probability": 0.4869395961945457,
+          "reference_probability": 0.4975619619606084,
+          "risk_difference": -0.010622365766062736
+        }
+      ]
+    },
+    "medium_risk": {
+      "customer_id": "CUST101050",
+      "predicted_churn_probability": 0.9184857105461565,
+      "actual_churn": 1,
+      "explanation_method": "One-feature-at-a-time replacement with training reference values",
+      "top_drivers": [
+        {
+          "feature": "monthly_usage_gb",
+          "original_value": 60.6,
+          "reference_value": 65.0,
+          "original_probability": 0.9184857105461565,
+          "reference_probability": 0.916047310987612,
+          "risk_difference": 0.002438399558544413
+        },
+        {
+          "feature": "satisfaction_score",
+          "original_value": 6.4,
+          "reference_value": 6.8,
+          "original_probability": 0.9184857105461565,
+          "reference_probability": 0.9176097467287225,
+          "risk_difference": 0.0008759638174339335
+        },
+        {
+          "feature": "age",
+          "original_value": 24,
+          "reference_value": 47.0,
+          "original_probability": 0.9184857105461565,
+          "reference_probability": 0.9184857105461565,
+          "risk_difference": 0.0
+        },
+        {
+          "feature": "tenure_months",
+          "original_value": 31,
+          "reference_value": 35.0,
+          "original_probability": 0.9184857105461565,
+          "reference_probability": 0.9184857105461565,
+          "risk_difference": 0.0
+        },
+        {
+          "feature": "contract_type",
+          "original_value": "Month-to-month",
+          "reference_value": "Month-to-month",
+          "original_probability": 0.9184857105461565,
+          "reference_probability": 0.9184857105461565,
+          "risk_difference": 0.0
+        },
+        {
+          "feature": "internet_service",
+          "original_value": "Fiber optic",
+          "reference_value": "Fiber optic",
+          "original_probability": 0.9184857105461565,
+          "reference_probability": 0.9184857105461565,
+          "risk_difference": 0.0
+        },
+        {
+          "feature": "region",
+          "original_value": "Eastern",
+          "reference_value": "Central",
+          "original_probability": 0.9184857105461565,
+          "reference_probability": 0.9184857105461565,
+          "risk_difference": 0.0
+        },
+        {
+          "feature": "monthly_charges",
+          "original_value": 114.68,
+          "reference_value": 71.21000000000001,
+          "original_probability": 0.9184857105461565,
+          "reference_probability": 0.9184857105461565,
+          "risk_difference": 0.0
+        }
+      ]
+    },
+    "high_risk": {
+      "customer_id": "CUST100035",
+      "predicted_churn_probability": 0.9449951283969771,
+      "actual_churn": 1,
+      "explanation_method": "One-feature-at-a-time replacement with training reference values",
+      "top_drivers": [
+        {
+          "feature": "monthly_usage_gb",
+          "original_value": 88.4,
+          "reference_value": 65.0,
+          "original_probability": 0.9449951283969771,
+          "reference_probability": 0.9169244261377918,
+          "risk_difference": 0.028070702259185287
+        },
+        {
+          "feature": "tenure_months",
+          "original_value": 46,
+          "reference_value": 35.0,
+          "original_probability": 0.9449951283969771,
+          "reference_probability": 0.9443964124274146,
+          "risk_difference": 0.0005987159695625133
+        },
+        {
+          "feature": "age",
+          "original_value": 69,
+          "reference_value": 47.0,
+          "original_probability": 0.9449951283969771,
+          "reference_probability": 0.9449951283969771,
+          "risk_difference": 0.0
+        },
+        {
+          "feature": "contract_type",
+          "original_value": "Month-to-month",
+          "reference_value": "Month-to-month",
+          "original_probability": 0.9449951283969771,
+          "reference_probability": 0.9449951283969771,
+          "risk_difference": 0.0
+        },
+        {
+          "feature": "internet_service",
+          "original_value": "DSL",
+          "reference_value": "Fiber optic",
+          "original_probability": 0.9449951283969771,
+          "reference_probability": 0.9449951283969771,
+          "risk_difference": 0.0
+        },
+        {
+          "feature": "region",
+          "original_value": "Western",
+          "reference_value": "Central",
+          "original_probability": 0.9449951283969771,
+          "reference_probability": 0.9449951283969771,
+          "risk_difference": 0.0
+        },
+        {
+          "feature": "monthly_charges",
+          "original_value": 107.64,
+          "reference_value": 71.21000000000001,
+          "original_probability": 0.9449951283969771,
+          "reference_probability": 0.9449951283969771,
+          "risk_difference": 0.0
+        },
+        {
+          "feature": "total_charges",
+          "original_value": 5074.61,
+          "reference_value": 2175.625,
+          "original_probability": 0.9449951283969771,
+          "reference_probability": 0.9449951283969771,
+          "risk_difference": 0.0
+        }
+      ]
+    }
+  }
+}
