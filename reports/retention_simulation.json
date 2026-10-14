@@ -1,0 +1,61 @@
+{
+  "evaluation_cohort": 240,
+  "contact_fraction_requested": 0.2,
+  "contact_capacity": 48,
+  "actual_contact_fraction": 0.2,
+  "rounding_rule": "ceil(n * contact_fraction)",
+  "total_actual_churners": 207,
+  "churn_prevalence": 0.8625,
+  "targeting": {
+    "actual_churners_captured": 48,
+    "precision_at_20": 1.0,
+    "recall_at_20": 0.2318840579710145,
+    "lift_at_20": 1.1594202898550725
+  },
+  "random_baseline": {
+    "method": "Expected uniform random sample",
+    "expected_churners_captured": 41.400000000000006,
+    "expected_precision": 0.8625,
+    "expected_recall": 0.2
+  },
+  "additional_churners_vs_random_expected": 6.599999999999994,
+  "hypothetical_financial_assumptions": {
+    "contact_cost": 5.0,
+    "retained_customer_value": 200.0,
+    "intervention_success_rate": 0.15,
+    "currency": "Hypothetical monetary units"
+  },
+  "financial_outcomes": {
+    "model_targeting": {
+      "contacts": 48,
+      "churners_reached": 48.0,
+      "success_rate": 0.15,
+      "expected_retained_customers": 7.199999999999999,
+      "campaign_cost": 240.0,
+      "expected_benefit": 1439.9999999999998,
+      "expected_net_benefit": 1199.9999999999998,
+      "roi": 4.999999999999999
+    },
+    "random_targeting_expected": {
+      "contacts": 48,
+      "churners_reached": 41.400000000000006,
+      "success_rate": 0.15,
+      "expected_retained_customers": 6.210000000000001,
+      "campaign_cost": 240.0,
+      "expected_benefit": 1242.0000000000002,
+      "expected_net_benefit": 1002.0000000000002,
+      "roi": 4.175000000000001
+    },
+    "no_outreach_incremental_net_benefit": 0.0,
+    "incremental_net_benefit_vs_random": 197.99999999999955
+  },
+  "limitations": [
+    "Test labels provide retrospective targeting results.",
+    "Random baseline is an expectation, not a sampled campaign.",
+    "Financial values and success rate are assumptions.",
+    "Prediction accuracy does not establish treatment effects.",
+    "Customers might differ in intervention responsiveness.",
+    "No-outreach incremental benefit is assumed to be zero.",
+    "No real retention intervention was conducted."
+  ]
+}
